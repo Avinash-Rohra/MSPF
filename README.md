@@ -9,7 +9,7 @@ This repository presents MSPF, a novel crowd counting framework based on multi-s
 ## Model Architecture
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/avibest1/MSF-CVHR/fa046fb80b17614fc74efe43674c96be0377938a/figures/Architecture.jpg" width="700"><br>
+  <img src="https://github.com/Avinash-Rohra/MSPF/blob/2fe3aced7b72d34c037e6499135161be316ed0b1/figures/Fig%202.jpg" width="700"><br>
   <em>Figure: Architecture of the proposed MSF-CVHR framework.</em>
 </p>
 
