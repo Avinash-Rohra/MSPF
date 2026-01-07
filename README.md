@@ -155,10 +155,10 @@ python train.py
 
 
 
-- The cross-view estimated results on the WildTrack dataset. The first row displays synchronized crowd images with the same timestamp; the second row shows the actual ground truth; the third row presents the estimation results; and the last two rows show the BEV-plotted density maps of distinct individuals.
+- Estimated results on proposed Highly-Packed-Crowd dataset. The first column shows the overlapped input images, the second column shows the actual ground truth, and the third, fourth, and fifth column shows non-overlap estimation, overlapped estimation, and  final estimated density map, respectively.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/avibest1/MSF-CVHR/14ca06bc82c761a4c48c29a071f297d9c55c1047/figures/Figure%207.jpg" width="700"><br>
+  <img src="https://github.com/Avinash-Rohra/MSPF/blob/7f512c3d9b3ac17626b55300d03b22ab58991843/figures/Figure%201.jpg" width="700"><br>
   <em>Figure: The cross-view estimated results on the WildTrack dataset.</em>
 </p>
 
