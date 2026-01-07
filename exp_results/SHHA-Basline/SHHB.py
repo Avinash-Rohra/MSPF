@@ -7,7 +7,7 @@ __C_SHHB = edict()
 cfg_data = __C_SHHB
 
 __C_SHHB.TRAIN_SIZE = (512,1024)
-__C_SHHB.DATA_PATH = '../ProcessedData/SHHB/'
+__C_SHHB.DATA_PATH = '../data_process/SHHB/'
 __C_SHHB.TRAIN_LST = 'train.txt'
 __C_SHHB.VAL_LST =  'val.txt'
 __C_SHHB.VAL4EVAL = 'val_gt_loc.txt'
