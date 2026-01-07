@@ -162,7 +162,7 @@ python train.py
   <em>Figure 2: The estimated results on the Highly-Packed Crowd dataset.</em>
 </p>
 
-
+##Note: The research paper associated with this code is currently under review at the Neural Networks journal. The final manuscript and citation details will be updated upon acceptance.
 
 
 
