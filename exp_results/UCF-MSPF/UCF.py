@@ -4,10 +4,10 @@ from easydict import EasyDict as edict
 # init
 __C_FDST = edict()
 
-cfg_data = __C_FDST
+cfg_data = __C_UCF
 
 __C_FDST.TRAIN_SIZE = (512,1024)
-__C_FDST.DATA_PATH = '../ProcessedData/FDST/'
+__C_FDST.DATA_PATH = '../data_process/UCF/'
 __C_FDST.TRAIN_LST = 'train.txt'
 __C_FDST.VAL_LST =  'val.txt'
 __C_FDST.VAL4EVAL = 'val_gt_loc.txt'
