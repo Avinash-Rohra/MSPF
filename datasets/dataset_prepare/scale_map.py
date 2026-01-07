@@ -26,7 +26,7 @@ img_transform = standard_transforms.Compose([
 ])
 
 pil_to_tensor = standard_transforms.ToTensor()
-model_path = 'PretrainedModels\hrnetv2_w48_imagenet_pretrained.pth'
+model_path = 'Models\MSPF\MSPF.pth'
 
 
 def main(dataset = None):
