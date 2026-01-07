@@ -30,12 +30,9 @@ model_path = 'Models\MSPF\MSPF.pth'
 
 
 def main(dataset = None):
-    # if dataset == 'QNRF':
-    #     dataRoot = '/media/D/GJY/ht/ProcessedData/QNRF/'
-    # if dataset == 'SHHB':
-    #     dataRoot = '/media/D/GJY/ht/ProcessedData/SHHB/'
+   
     dataset == 'SHHA'
-    dataRoot = 'D:\Research Work PhD\1\IIM-main\ProcessedData\SHHA'
+    dataRoot = 'D:\Research Work'
     img_path = os.path.join(dataRoot, 'images')
     dst_size_map_path = os.path.join(dataRoot, 'size_map')
     if not os.path.exists(dst_size_map_path):
@@ -48,7 +45,7 @@ def main(dataset = None):
     os.environ["CUDA_VISIBLE_DEVICES"] = GPU_ID
     torch.backends.cudnn.benchmark = True
 
-    net = CrowdCounter(GPU_ID, 'Res50_SCAR')
+    net = CrowdCounter(GPU_ID, 'Avi_MSPF')
     net.cuda()
     net.load_state_dict(torch.load(model_path), strict=False)
     net.eval()
