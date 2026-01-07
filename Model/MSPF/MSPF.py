@@ -470,11 +470,11 @@ class HighResolutionNet(nn.Module):
             model_dict.update(pretrained_dict)
             self.load_state_dict(model_dict)
 
-            print("load pre_trained parameters for HR_Net")
+            print("load pre_trained parameters for MSPF")
 
 def get_seg_model(**kwargs):
-    from model.HR_Net.default import _C as hr_config
-    from model.HR_Net.default import update_config
+    from model.MSPF.default import _C as hr_config
+    from model.MSPF.default import update_config
     
     update_config(hr_config, './model/HR_Net/seg_hrnet_w48.yaml')
     model = HighResolutionNet(hr_config, **kwargs)
