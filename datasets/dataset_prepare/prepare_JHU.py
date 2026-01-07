@@ -10,8 +10,8 @@ import glob
 from functions import euclidean_dist,  generate_cycle_mask, average_del_min
 cycle = False
 
-Root = '/media/D/GJY/ht/ProcessedData/JHU'
-dst_Root = '/media/D/GJY/ht/ProcessedData/JHU'
+Root = 'data_process/JHU'
+dst_Root = 'data_process/JHU'
 
 
 
