@@ -11,7 +11,7 @@ import glob
 import torch
 import torch.nn.functional as F
 mode = 'train'
-Root = 'ProcessedData/SHHA'
+Root = 'data_process/SHHA'
 train_path =  os.path.join(Root,'train_data')
 test_path =  os.path.join(Root,'test_data')
 
