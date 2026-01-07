@@ -159,7 +159,7 @@ python train.py
 
 <p align="center">
   <img src="https://github.com/Avinash-Rohra/MSPF/blob/7f512c3d9b3ac17626b55300d03b22ab58991843/figures/Figure%201.jpg" width="700"><br>
-  <em>Figure: The cross-view estimated results on the WildTrack dataset.</em>
+  <em>Figure: The estimated results on the Highly-Packed Crowd dataset.</em>
 </p>
 
 
