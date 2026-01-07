@@ -10,7 +10,7 @@ This repository presents MSPF, a novel crowd counting framework based on multi-s
 
 <p align="center">
   <img src="https://github.com/Avinash-Rohra/MSPF/blob/2fe3aced7b72d34c037e6499135161be316ed0b1/figures/Fig%202.jpg" width="700"><br>
-  <em>Figure: Architecture of the proposed MSPF framework.</em>
+  <em>Figure 1: Architecture of the proposed MSPF framework.</em>
 </p>
 
 # Getting Started
@@ -159,7 +159,7 @@ python train.py
 
 <p align="center">
   <img src="https://github.com/Avinash-Rohra/MSPF/blob/7f512c3d9b3ac17626b55300d03b22ab58991843/figures/Figure%201.jpg" width="700"><br>
-  <em>Figure: The estimated results on the Highly-Packed Crowd dataset.</em>
+  <em>Figure 2: The estimated results on the Highly-Packed Crowd dataset.</em>
 </p>
 
 
