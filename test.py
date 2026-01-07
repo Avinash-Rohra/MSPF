@@ -19,21 +19,19 @@ GPU_ID = '0'
 os.environ["CUDA_VISIBLE_DEVICES"] = GPU_ID
 torch.backends.cudnn.benchmark = True
 
-netName = 'HR_Net' # options: HR_Net,VGG16_FPN
-model_path = 'PretrainedModels\hrnetv2_w48_imagenet_pretrained.pth'
+netName = 'MSPF'
+model_path = 'Model\MSPF\MSPF.pth'
 
 out_file_name= './saved_exp_results/' + dataset + '_' + netName + '_' + test_list
 
 
-if dataset == 'NWPU':
-    mean_std = ([0.446139603853, 0.409515678883, 0.395083993673], [0.288205742836, 0.278144598007, 0.283502370119])
 if dataset == 'SHHA':
     mean_std = ([0.410824894905, 0.370634973049, 0.359682112932], [0.278580576181, 0.26925137639, 0.27156367898])
 if dataset == 'SHHB':
     mean_std = ([0.452016860247, 0.447249650955, 0.431981861591], [0.23242045939, 0.224925786257, 0.221840232611])   
 if dataset == 'QNRF':
     mean_std = ([0.413525998592, 0.378520160913, 0.371616870165], [0.284849464893, 0.277046442032, 0.281509846449])  
-if dataset == 'FDST':
+if dataset == 'UCF_CC_50':
     mean_std = ([0.452016860247, 0.447249650955, 0.431981861591], [0.23242045939, 0.224925786257, 0.221840232611])  
 if dataset == 'JHU':
     mean_std = ([0.429683953524, 0.437104910612, 0.421978861094], [0.235549390316, 0.232568427920, 0.2355950474739]) 
