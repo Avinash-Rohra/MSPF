@@ -108,8 +108,8 @@ python train.py
      --batch 16 \
      --epochs 150 \
      --data {dataset.location}/data.yaml \
-     --weights MSF-CVHR.pt \
-     --name MSF-CVHR_results \
+     --weights MSPF.pt \
+     --name MSPF_results \
      --cache
   
 
@@ -133,18 +133,26 @@ python train.py
 
 # Performance
 
-- The validtion on Wildtrack, the table is shown as follows:
+- Comparison results of MSPF with state-of-the-art methods on ShanghaiTech Part_A, Part_B, UCF_CC_50, UCF_QNRF, and JHU-Crowd++ datasets using MAE and MSE
 
-| Methods              | AP   | FPR-95 | P     | R     | ACC   | IPAA-100 | IPAA-90 | IPAA-80 |
-|----------------------|------|--------|-------|-------|-------|----------|----------|----------|
-| OSNET                | 16.81| 92.08  | 28.27 | 29.67 | 37.55 | 0.00     | 0.48     | 3.21     |
-| MvMHAT               | 4.45 | 94.13  | 5.97  | 6.28  | 22.37 | 0.00     | 0.48     | 1.55     |
-| OSNET+ESC            | 59.53| 15.33  | 78.12 | 79.08 | 82.12 | 26.43    | 39.40    | 66.68    |
-| GNN_CCA              | 4.13 | 93.30  | –     | 0.00  | 36.82 | 0.00     | 2.14     | 14.41    |
-| ASNet                | 73.40| 8.30   | –     | –     | –     | 32.10    | –        | –        |
-| ViT-P3DE             | 70.45| 5.83   | 86.91 | 87.01 | 89.48 | 35.48    | 53.10    | 84.17    |
-| MVA                  | 56.68| 11.18  | 92.31 | 94.34 | 91.73 | 54.64    | 65.60    | 86.55    |
-| **MSF-CVHR (Ours)**  | **65.40**| **6.24** | **93.12** | **94.82** | **90.84** | **54.62** | **68.30** | **87.36** |
+| Method              | ShanghaiTech A |       | ShanghaiTech B |      | UCF_CC_50 |       | UCF_QNRF |       | JHU-CROWD++ |       |
+| ------------------- | -------------- | ----- | -------------- | ---- | --------- | ----- | -------- | ----- | ----------- | ----- |
+|                     | MAE            | MSE   | MAE            | MSE  | MAE       | MSE   | MAE      | MSE   | MAE         | MSE   |
+| Zhang et al. [30]   | 181.8          | 277.7 | 32.0           | 49.8 | 467.0     | 498.5 | –        | –     | –           | –     |
+| MCNN [1]            | 110.2          | 173.2 | 26.4           | 41.3 | 466.0     | 497.5 | 242.4    | 363.6 | –           | –     |
+| CSRNet [21]         | 68.2           | 115.0 | 10.6           | 16.0 | 266.1     | 397.5 | 120.3    | 208.5 | –           | –     |
+| Multiscale-CNN [31] | 83.6           | 124.6 | 17.7           | 32.3 | –         | –     | –        | –     | –           | –     |
+| Wan et al. [32]     | 61.3           | 95.4  | 7.3            | 11.7 | –         | –     | 84.3     | 147.5 | –           | –     |
+| CDCC [33]           | 76.3           | 144.2 | 11.4           | 17.1 | 336.5     | 486.1 | 134.3    | 240.3 | –           | –     |
+| CLTR [34]           | 56.9           | 95.2  | 6.5            | 10.6 | –         | –     | 85.8     | 141.3 | –           | –     |
+| DGCC [35]           | 121.8          | 203.1 | 12.6           | 24.6 | –         | –     | 119.4    | 216.6 | –           | –     |
+| MNA [36]            | –              | –     | –              | –    | –         | –     | –        | –     | 67.7        | 258.5 |
+| DMCNet [37]         | 58.4           | 84.5  | 8.6            | 13.6 | –         | –     | 96.5     | 163.9 | –           | –     |
+| MSSRGN++ [38]       | 86.6           | 137.8 | –              | –    | –         | –     | 115.6    | 213.9 | –           | –     |
+| TopoCount [39]      | –              | –     | –              | –    | –         | –     | –        | –     | 60.9        | 267.4 |
+| UOT [40]            | –              | –     | –              | –    | –         | –     | –        | –     | 60.5        | 252.7 |
+| PaDNet [41]         | 59.2           | 98.1  | 8.1            | 12.2 | 185.8     | 278.3 | –        | –     | –           |       |
+
 
 
 - The cross-view estimated results on the WildTrack dataset. The first row displays synchronized crowd images with the same timestamp; the second row shows the actual ground truth; the third row presents the estimation results; and the last two rows show the BEV-plotted density maps of distinct individuals.
