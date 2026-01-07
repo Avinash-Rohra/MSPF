@@ -16,7 +16,7 @@ _C = CN()
 
 # common params for NETWORK
 _C.MODEL = CN()
-_C.MODEL.NAME = 'seg_hrnet'   #'seg_hrnet'
+_C.MODEL.NAME = 'MSPF'   #'MSPF'
 _C.MODEL.PRETRAINED = ''
 _C.MODEL.EXTRA = CN(new_allowed=True)
 
