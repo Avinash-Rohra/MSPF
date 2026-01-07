@@ -7,7 +7,7 @@ __C_QNRF = edict()
 cfg_data = __C_QNRF
 
 __C_QNRF.TRAIN_SIZE = (512,1024)
-__C_QNRF.DATA_PATH = '../ProcessedData/QNRF/'
+__C_QNRF.DATA_PATH = '../data_process/QNRF/'
 __C_QNRF.TRAIN_LST = 'train.txt'
 __C_QNRF.VAL_LST =  'val.txt'
 __C_QNRF.VAL4EVAL = 'val_gt_loc.txt'
