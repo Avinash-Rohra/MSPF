@@ -20,12 +20,14 @@ This repository presents MSPF, a novel crowd counting framework based on multi-s
     - PyTorch ≥ 1.6
     - other libs in ```requirements.txt```, run ```pip install -r requirements.txt```.
 -  Code
-    - Clone this repo in the directory (```Root/MSF-CVHR```):
+    - Clone this repo in the directory (```Root/MSPF```):
   
 - Datasets
-    - Download Wildtrack dataset from this [link](https://www.epfl.ch/labs/cvlab/data/data-wildtrack/).
-    - Download MVOR dataset from this [link](https://camma.unistra.fr/datasets/).
-    - Download MultiviewX dataset from this [link](https://opendatalab.com/OpenDataLab/MultiviewX/explore/main).
+    - The HPC dataset is already available within this repository for ease of access and reproducibility
+	- Download ShanghaiTech dataset from this [link](https://www.kaggle.com/datasets/tthien/shanghaitech/).
+    - Download UCF-QNRF dataset from this [link](https://www.kaggle.com/datasets/faihajalamtopu/ucf-qnrf/).
+    - Download UCF-CC-50 dataset from this [link](https://www.crcv.ucf.edu/data/ucf-cc-50/).
+    - Download JHU-Crowd++ dataset from this [link](http://www.crowd-counting.com/).
     - Unzip ```*zip``` files in turns and place ```datasets*``` into the folder (```dataset_prepare/Cross-View```). 
 
  
