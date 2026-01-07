@@ -293,4 +293,4 @@ class Trainer():
 
         self.train_record = update_model(self, [f1m_l, ap_l, ar_l,mae, mse, nae, loss])
 
-        print_NWPU_summary(self,[f1m_l, ap_l, ar_l,mae, mse, nae, loss])
+        print_SHHA_summary(self,[f1m_l, ap_l, ar_l,mae, mse, nae, loss])
