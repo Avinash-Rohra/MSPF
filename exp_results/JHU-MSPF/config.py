@@ -9,12 +9,12 @@ cfg = __C
 
 #------------------------------TRAIN------------------------
 __C.SEED = 3035  # random seed,  for reproduction
-__C.DATASET = 'JHU'  # dataset selection: NWPU, SHHA, SHHB, QNRF, FDST
+__C.DATASET = 'JHU' 
 
 
-__C.NET = 'HR_Net' #  optional ['HR_Net', 'VGG16_FPN']
+__C.NET = 'MSPF' 
 
-__C.PRE_HR_WEIGHTS = '../PretrainedModels/hrnetv2_w48_imagenet_pretrained.pth'
+__C.PRE_HR_WEIGHTS = '../Models/MSPF.pth'
 
 __C.RESUME = False  # contine training
 __C.RESUME_PATH = './exp/12-28_16-21_QNRF_HR_Net/latest_state.pth'
