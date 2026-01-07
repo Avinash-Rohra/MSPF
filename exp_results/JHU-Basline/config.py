@@ -12,7 +12,7 @@ __C.SEED = 3035  # random seed,  for reproduction
 __C.DATASET = 'JHU'  
 
 
-__C.NET = 'VGG16_MSPF' 
+__C.NET = 'Baseline' 
 
 __C.PRE_HR_WEIGHTS = '../Models/MSPF.pth'
 
