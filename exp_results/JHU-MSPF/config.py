@@ -17,7 +17,7 @@ __C.NET = 'MSPF'
 __C.PRE_HR_WEIGHTS = '../Models/MSPF.pth'
 
 __C.RESUME = False  # contine training
-__C.RESUME_PATH = './exp/12-28_16-21_QNRF_HR_Net/latest_state.pth'
+__C.RESUME_PATH = './exp_resultst/latest_state.pth'
 
 __C.GPU_ID = '2,3'  # sigle gpu: [0], [1] ...; multi gpus: [0,1]
 
