@@ -32,37 +32,71 @@ This repository presents MSPF, a novel crowd counting framework based on multi-s
 
   - Finally, the folder tree is below:
  ```
-  -- ProcessedData
-  |-- Cross-View
-  |-- Wildtrack
-	 |-- image_subsets
-            |   |-- C1
-			|   |-- 00000000.png
-			|   |-- 00000005.png
-			|   |-- ...
-			|   |-- 00002000.png
-            |   |-- C2
-			|   |-- 00000000.png
-			|   |-- 00000005.png
-			|   |-- ...
-			|   |-- 00002000.png
-            ....................
-            ....................
-            |   |-- C7
-			|   |-- 00000000.png
-			|   |-- 00000005.png
-			|   |-- ...
-			|   |-- 00002000.png
-
-     |-- annotations_positions
-			|   |-- 00000000.json
-			|   |-- 00000005.json
-			|   |-- ...
-			|   |-- 00001995.json
-			|-- train.txt
-			|-- val.txt
-			|-- test.txt
-			|-- val_gt_loc.txt
+ProcessedData
+|-- ShanghaiTech
+|   |-- Part_A
+|   |   |-- train
+|   |   |   |-- images
+|   |   |   |   |-- IMG_1.jpg
+|   |   |   |   |-- IMG_2.jpg
+|   |   |   |   |-- ...
+|   |   |   |-- annotations
+|   |   |   |   |-- IMG_1.mat
+|   |   |   |   |-- IMG_2.mat
+|   |   |   |   |-- ...
+|   |   |-- test
+|   |       |-- images
+|   |       |-- annotations
+|   |
+|   |-- Part_B
+|       |-- train
+|       |-- test
+|
+|-- QNRF
+|   |-- train
+|   |   |-- images
+|   |   |   |-- 0001.jpg
+|   |   |   |-- 0002.jpg
+|   |   |   |-- ...
+|   |   |-- annotations
+|   |       |-- 0001.mat
+|   |       |-- 0002.mat
+|   |       |-- ...
+|   |
+|   |-- test
+|       |-- images
+|       |-- annotations
+|
+|-- UCF_CC_50
+|   |-- images
+|   |   |-- 1.jpg
+|   |   |-- 2.jpg
+|   |   |-- ...
+|   |-- annotations
+|   |   |-- 1.mat
+|   |   |-- 2.mat
+|   |   |-- ...
+|   |-- train.txt
+|   |-- test.txt
+|
+|-- JHU_Crowd
+    |-- train
+    |   |-- images
+    |   |   |-- 000001.jpg
+    |   |   |-- 000002.jpg
+    |   |   |-- ...
+    |   |-- annotations
+    |   |   |-- 000001.txt
+    |   |   |-- 000002.txt
+    |   |   |-- ...
+    |
+    |-- val
+    |   |-- images
+    |   |-- annotations
+    |
+    |-- test
+        |-- images
+        |-- annotations
 
  ```
 
