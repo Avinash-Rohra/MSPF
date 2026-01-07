@@ -5,9 +5,9 @@ import torch.nn as nn
 from misc.utils import *
 
 mode = 'Vgg_bn'
-class VGG16_FPN(nn.Module):
+class VGG16_MSPF(nn.Module):
     def __init__(self, pretrained=True):
-        super(VGG16_FPN, self).__init__()
+        super(VGG16_MSPF, self).__init__()
         if mode == 'Vgg_bn':
             vgg = models.vgg16_bn(pretrained=pretrained)
         features = list(vgg.features.children())
@@ -55,12 +55,10 @@ class VGG16_FPN(nn.Module):
 
 
 
-class FPN(nn.Module):
+class PFM(nn.Module):
     """
     Feature Pyramid Network.
 
-    This is an implementation of - Feature Pyramid Networks for Object
-    Detection (https://arxiv.org/abs/1612.03144)
 
     Args:
         in_channels (List[int]):
@@ -96,7 +94,7 @@ class FPN(nn.Module):
 
     def __init__(self,in_channels,out_channels,num_outs,start_level=0,end_level=-1,
                 extra_convs_on_inputs=True,bn=True):
-        super(FPN, self).__init__()
+        super(PFM, self).__init__()
         assert isinstance(in_channels, list)
         self.in_channels = in_channels
         self.out_channels = out_channels
@@ -186,7 +184,7 @@ class Conv2d(nn.Module):
 if __name__ == "__main__":
 
 
-    net = VGG16_FPN(pretrained=False).cuda()
+    net = VGG16_MSPF(pretrained=False).cuda()
     print(net)
     # summary(net,(3,64 ,64 ),batch_size=4)
     net(torch.rand(1,3,64,64).cuda())
