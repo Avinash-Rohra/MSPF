@@ -12,7 +12,7 @@ import glob
 import torch
 import torch.nn.functional as F
 mode = 'train'
-Root = '/media/D/GJY/ht/ProcessedData/SHHB'
+Root = 'data_process/SHHB'
 train_path =  os.path.join(Root,'train_data')
 test_path =  os.path.join(Root,'test_data')
 
