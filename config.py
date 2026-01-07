@@ -9,15 +9,15 @@ cfg = __C
 
 #------------------------------TRAIN------------------------
 __C.SEED = 3035  # random seed,  for reproduction
-__C.DATASET = 'SHHA'  # dataset selection: NWPU, SHHA, SHHB, QNRF, FDST
+__C.DATASET = 'SHHA'  # dataset selection: SHHA, SHHB, QNRF, UCF_CC_50
 
 
-__C.NET = 'HR_Net' #  optional ['HR_Net', 'VGG16_FPN']
+__C.NET = 'MSPF' 
 
-__C.PRE_HR_WEIGHTS = '../PretrainedModels/hrnetv2_w48_imagenet_pretrained.pth'
+__C.PRE_HR_WEIGHTS = '../Model/MSPF/MSPF.pth'
 
 __C.RESUME = False  # contine training
-__C.RESUME_PATH = './exp/12-28_16-21_QNRF_HR_Net/latest_state.pth'
+__C.RESUME_PATH = './exp_results/07-01-2026_SHAA/latest_state.pth'
 
 __C.GPU_ID = '0'  # sigle gpu: [0], [1] ...; multi gpus: [0,1]
 
