@@ -7,7 +7,7 @@ __C_NWPU = edict()
 cfg_data = __C_NWPU
 
 __C_NWPU.TRAIN_SIZE = (512,1024)
-__C_NWPU.DATA_PATH = '../ProcessedData/NWPU/'
+__C_NWPU.DATA_PATH = '../data_processa/UCF_CC_50/'
 __C_NWPU.TRAIN_LST = 'train.txt'
 __C_NWPU.VAL_LST =  'val.txt'
 __C_NWPU.VAL4EVAL = 'val_gt_loc.txt'
