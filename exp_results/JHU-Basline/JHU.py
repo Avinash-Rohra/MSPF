@@ -7,7 +7,7 @@ __C_JHU = edict()
 cfg_data = __C_JHU
 
 __C_JHU.TRAIN_SIZE = (512, 1024)
-__C_JHU.DATA_PATH = '../ProcessedData/JHU'
+__C_JHU.DATA_PATH = '../data_process/JHU'
 __C_JHU.TRAIN_LST = 'train.txt'
 __C_JHU.VAL_LST =  'val.txt'
 __C_JHU.VAL4EVAL = 'val_gt_loc.txt'
