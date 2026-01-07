@@ -7,7 +7,7 @@ __C_SHHA = edict()
 cfg_data = __C_SHHA
 
 __C_SHHA.TRAIN_SIZE = (512,1024)
-__C_SHHA.DATA_PATH = '../ProcessedData/SHHA/'
+__C_SHHA.DATA_PATH = '../data_process/SHHA/'
 __C_SHHA.TRAIN_LST = 'train.txt'
 __C_SHHA.VAL_LST =  'val.txt'
 __C_SHHA.VAL4EVAL = 'val_gt_loc.txt'
