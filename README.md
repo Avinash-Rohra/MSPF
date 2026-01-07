@@ -28,7 +28,7 @@ This repository presents MSPF, a novel crowd counting framework based on multi-s
     - Download UCF-QNRF dataset from this [link](https://www.kaggle.com/datasets/faihajalamtopu/ucf-qnrf/).
     - Download UCF-CC-50 dataset from this [link](https://www.crcv.ucf.edu/data/ucf-cc-50/).
     - Download JHU-Crowd++ dataset from this [link](http://www.crowd-counting.com/).
-    - Unzip ```*zip``` files in turns and place ```datasets*``` into the folder (```data_process```). dataset folders: (HPC, SHHA, SHHB, QNRF, UCF_CC_50, JHU-Crowd++) 
+    - Unzip ```*zip``` files in turns and place ```datasets*``` into the folder (```data_process```). Dataset folders: (HPC, SHHA, SHHB, QNRF, UCF_CC_50, JHU-Crowd++) 
 
   - Finally, the folder tree is below:
  ```
